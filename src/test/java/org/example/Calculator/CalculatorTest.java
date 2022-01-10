@@ -40,4 +40,12 @@ public class CalculatorTest
         double result = calculator.divide(5, 2);
         assertEquals(2.5, result, 0);
     }
+
+    @Test
+    public void multiplyTwoNumbers()
+    {
+        Calculator calculator = new Calculator();
+        int result = calculator.multiply(3, 2);
+        assertEquals(6, result);
+    }
 }
