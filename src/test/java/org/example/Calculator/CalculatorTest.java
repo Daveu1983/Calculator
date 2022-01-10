@@ -1,9 +1,8 @@
 package org.example.Calculator;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 /**
  * Unit test for simple App.
@@ -30,7 +29,15 @@ public class CalculatorTest
     public void divideTwoNumbers()
     {
         Calculator calculator = new Calculator();
-        int result = calculator.divide(6, 3);
-        assertEquals(2, result);
+        double result = calculator.divide(6, 3);
+        assertEquals(2, result, 0);
+    }
+
+    @Test
+    public void getDecimalResult()
+    {
+        Calculator calculator = new Calculator();
+        double result = calculator.divide(5, 2);
+        assertEquals(2.5, result, 0);
     }
 }
