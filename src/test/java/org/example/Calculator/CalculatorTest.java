@@ -25,4 +25,12 @@ public class CalculatorTest
         int result = calculator.subtract(6, 3);
         assertEquals(3, result);
     }
+
+    @Test
+    public void divideTwoNumbers()
+    {
+        Calculator calculator = new Calculator();
+        int result = calculator.divide(6, 3);
+        assertEquals(2, result);
+    }
 }
