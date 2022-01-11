@@ -21,4 +21,12 @@ public class scientificCalculatorTest {
         assertEquals(9, result);
     }
 
+    @Test
+    public void powerOf()
+    {
+        ScientificCalculator calculator = new ScientificCalculator();
+        int result = calculator.toThePowerOf(3,4);
+        assertEquals(81, result);
+    }
+
 }
