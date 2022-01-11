@@ -29,4 +29,12 @@ public class scientificCalculatorTest {
         assertEquals(81, result);
     }
 
+    @Test
+    public void squareRootTest()
+    {
+        ScientificCalculator calculator = new ScientificCalculator();
+        int result = calculator.squareRoot(25);
+        assertEquals(5, result);
+    }
+
 }

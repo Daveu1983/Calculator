@@ -12,4 +12,8 @@ public class ScientificCalculator extends Calculator{
     public int toThePowerOf(int i, int i1) {
         return (int) Math.pow(i,i1);
     }
+
+    public int squareRoot(int i) {
+        return (int) Math.sqrt(i);
+    }
 }
