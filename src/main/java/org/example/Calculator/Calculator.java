@@ -1,9 +1,5 @@
 package org.example.Calculator;
 
-/**
- * Hello world!
- *
- */
 public class Calculator
 {
 

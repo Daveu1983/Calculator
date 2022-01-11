@@ -1,2 +1,4 @@
-package org.example.Calculator;public class ScientificCalculator {
+package org.example.Calculator;
+
+public class ScientificCalculator extends Calculator{
 }
