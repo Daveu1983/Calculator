@@ -13,4 +13,12 @@ public class scientificCalculatorTest {
         assertEquals(5, result);
     }
 
+    @Test
+    public void squareNumber()
+    {
+        ScientificCalculator calculator = new ScientificCalculator();
+        int result = calculator.square(3);
+        assertEquals(9, result);
+    }
+
 }
