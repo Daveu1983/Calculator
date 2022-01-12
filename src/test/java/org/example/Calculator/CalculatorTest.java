@@ -45,4 +45,12 @@ public class CalculatorTest
         int result = calculator.multiply(3, 2);
         assertEquals(6, result);
     }
+
+    @Test
+    public void testGetResult()
+    {
+        Calculator calculator = new Calculator();
+        int result = calculator.getResult();
+        assertEquals(0, result);
+    }
 }
