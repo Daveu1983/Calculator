@@ -60,4 +60,12 @@ public class CalculatorTest
         calculator.multiply(3, 2);
         assertEquals(6, calculator.getResult());
     }
+    @Test
+    public void resultIsUpdatedAfterTwoMultiply()
+    {
+        Calculator calculator = new Calculator();
+        calculator.multiply(3, 2);
+        calculator.multiply(calculator.getResult(), 2);
+        assertEquals(12, calculator.getResult());
+    }
 }
