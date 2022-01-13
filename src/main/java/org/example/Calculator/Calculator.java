@@ -3,35 +3,33 @@ package org.example.Calculator;
 public class Calculator
 {
 
-    private int result = 0;
+    private double result = 0.0d;
 
-    public int add(int i, int i1) {
-        return i + i1;
-    }
-
-    public int subtract(int i, int i1) {
-        return i - i1;
-    }
-
-    public double divide(double i, double i1) {
-            return i / i1;
-    }
-
-    public int multiply(int i, int i1) {
-        if (result == 0) {
-            setResult(i*i1);
-        }
-        else {
-            setResult(result * i1);
-        }
+    public double add(double number) {
+        setResult(getResult() + number);
         return getResult();
     }
 
-    public void setResult(int i) {
+    public double subtract(int number) {
+        setResult(getResult() - number);
+        return getResult();
+    }
+
+    public double divide(double number) {
+        setResult((getResult() / number));
+        return getResult();
+    }
+
+    public double multiply(double number) {
+        setResult(result * number);
+        return getResult();
+    }
+
+    public void setResult(double i) {
         this.result = i;
     }
 
-    public int getResult() {
+    public double getResult() {
         return result;
     }
 }

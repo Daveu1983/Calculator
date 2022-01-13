@@ -5,15 +5,15 @@ import java.lang.Math;
 public class ScientificCalculator extends Calculator{
 
 
-    public int square(int i) {
-        return (int) Math.pow(i,2);
+    public double square() {
+        return Math.pow(getResult(),2);
     }
 
-    public int toThePowerOf(int i, int i1) {
-        return (int) Math.pow(i,i1);
+    public double toThePowerOf(double number) {
+        return Math.pow(getResult(), number);
     }
 
-    public int squareRoot(int i) {
-        return (int) Math.sqrt(i);
+    public double squareRoot() {
+        return Math.sqrt(getResult());
     }
 }

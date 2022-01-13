@@ -9,32 +9,36 @@ public class scientificCalculatorTest {
     public void addTwoNumbers()
     {
         ScientificCalculator calculator = new ScientificCalculator();
-        int result = calculator.add(2, 3);
-        assertEquals(5, result);
+        calculator.setResult(2);
+        double result = calculator.add(3);
+        assertEquals(5, result, 0);
     }
 
     @Test
     public void squareNumber()
     {
         ScientificCalculator calculator = new ScientificCalculator();
-        int result = calculator.square(3);
-        assertEquals(9, result);
+        calculator.setResult(3);
+        double result = calculator.square();
+        assertEquals(9, result, 0);
     }
 
     @Test
     public void powerOf()
     {
         ScientificCalculator calculator = new ScientificCalculator();
-        int result = calculator.toThePowerOf(3,4);
-        assertEquals(81, result);
+        calculator.setResult(3);
+        double result = calculator.toThePowerOf(4);
+        assertEquals(81, result, 0);
     }
 
     @Test
     public void squareRootTest()
     {
         ScientificCalculator calculator = new ScientificCalculator();
-        int result = calculator.squareRoot(25);
-        assertEquals(5, result);
+        calculator.setResult(25);
+        double result = calculator.squareRoot();
+        assertEquals(5, result, 0);
     }
 
 }
