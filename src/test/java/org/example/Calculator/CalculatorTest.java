@@ -53,4 +53,11 @@ public class CalculatorTest
         int result = calculator.getResult();
         assertEquals(0, result);
     }
+    @Test
+    public void resultIsUpdatedAfterOneMultiply()
+    {
+        Calculator calculator = new Calculator();
+        calculator.multiply(3, 2);
+        assertEquals(6, calculator.getResult());
+    }
 }

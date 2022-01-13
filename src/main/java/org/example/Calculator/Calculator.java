@@ -18,7 +18,17 @@ public class Calculator
     }
 
     public int multiply(int i, int i1) {
-        return i * i1;
+        if (result == 0) {
+            setResult(i*i1);
+        }
+        else {
+            setResult(result * i1);
+        }
+        return getResult();
+    }
+
+    public void setResult(int i) {
+        this.result = i;
     }
 
     public int getResult() {
