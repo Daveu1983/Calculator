@@ -25,8 +25,8 @@ public class Calculator
         return getResult();
     }
 
-    public void setResult(double i) {
-        this.result = i;
+    public void setResult(double number) {
+        this.result = number;
     }
 
     public double getResult() {
