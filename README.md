@@ -4,6 +4,7 @@
 
  - [x] Variables
  - [] Operators
+ - [] If and Else statements
  - [] For Loops
  - [] While Loops
  - [] Do While Loops
