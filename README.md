@@ -15,3 +15,5 @@
  - [x] Encapsulation
  - [] Polymorphism
  - [] Abstraction
+
+### The repository was created from the maven quickstart archetype
