@@ -58,6 +58,7 @@ public class CalculatorTest
         double result = calculator.getResult();
         assertEquals(0, result, 0);
     }
+
     @Test
     public void resultIsUpdatedAfterTwoMultiply()
     {
@@ -66,5 +67,14 @@ public class CalculatorTest
         calculator.multiply(2);
         calculator.multiply(2);
         assertEquals(12, calculator.getResult(), 0);
+    }
+
+    @Test
+    public void canANumberBeMadeNegative()
+    {
+        Calculator calculator = new Calculator();
+        calculator.setResult(5);
+        calculator.negate();
+        assertEquals(-5, calculator.getResult(), 0);
     }
 }

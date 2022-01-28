@@ -3,8 +3,8 @@
 ### A simple Java application to demonstrate basic Java concepts including:-
 
  - [x] Variables
- - [] Operators
- - [] If and Else statements
+ - [x] Operators
+ - [x] If and Else statements
  - [] For Loops
  - [] While Loops
  - [] Do While Loops

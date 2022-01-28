@@ -32,4 +32,15 @@ public class Calculator
     public double getResult() {
         return result;
     }
+
+    public void negate() {
+        double result = getResult();
+        if (result > 0){
+            result = 0 - result;
+            setResult(result);
+        }
+        else {
+            System.out.println("number is already negative");
+        }
+    }
 }
