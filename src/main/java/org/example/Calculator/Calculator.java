@@ -4,6 +4,7 @@ public class Calculator
 {
 
     private double result = 0.0d;
+    private String message;
 
     public double add(double number) {
         setResult(getResult() + number);
@@ -16,8 +17,20 @@ public class Calculator
     }
 
     public double divide(double number) {
-        setResult((getResult() / number));
+        try{
+            double result = getResult() / number;
+            setResult(result);
+        }
+        catch (IllegalArgumentException ex){
+            setResult(0);
+            setErrorMessage(ex.getMessage());
+        }
         return getResult();
+    }
+
+    public String setErrorMessage(String message) {
+        this.message = message;
+        return message;
     }
 
     public double multiply(double number) {
@@ -40,7 +53,13 @@ public class Calculator
             setResult(result);
         }
         else {
-            System.out.println("number is already negative");
+            System.out.println("number is already negative, set result to zero");
+            setResult(0);
+            setErrorMessage("error");
         }
+    }
+
+    public String getErrorMessage() {
+        return message;
     }
 }

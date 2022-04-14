@@ -77,4 +77,14 @@ public class CalculatorTest
         calculator.negate();
         assertEquals(-5, calculator.getResult(), 0);
     }
+
+    @Test
+    public void getErrorMessage()
+    {
+        Calculator calculator = new Calculator();
+        calculator.setResult(-5);
+        calculator.negate();
+        assertEquals(0, calculator.getResult(), 0);
+        assertEquals("error", calculator.getErrorMessage());
+    }
 }
