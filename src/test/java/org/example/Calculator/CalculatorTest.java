@@ -2,9 +2,11 @@ package org.example.Calculator;
 
 import org.junit.Test;
 
+import java.lang.reflect.Executable;
+
 import static org.junit.Assert.*;
 
-public class CalculatorTest
+public class    CalculatorTest
 {
     @Test
     public void addTwoNumbers()
@@ -77,14 +79,17 @@ public class CalculatorTest
         calculator.negate();
         assertEquals(-5, calculator.getResult(), 0);
     }
-
     @Test
-    public void getErrorMessage()
-    {
-        Calculator calculator = new Calculator();
-        calculator.setResult(-5);
-        calculator.negate();
-        assertEquals(0, calculator.getResult(), 0);
-        assertEquals("error", calculator.getErrorMessage());
+    public void getException() {
+
+        Throwable exception = assertThrows(
+                ArithmeticException.class, () -> {
+                    Calculator calculator = new Calculator();
+                    calculator.setResult(-5);
+                    calculator.negate();
+                }
+        );
+        assertEquals("cannot negate a number", exception.getMessage());
     }
+
 }

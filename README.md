@@ -9,7 +9,7 @@
  - [] While Loops
  - [] Do While Loops
  - [] Switch Statements
- - [] Exception
+ - [x] Exception
  - [x] Methods
  - [x] Classes
  - [x] Unit Tests

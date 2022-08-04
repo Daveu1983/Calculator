@@ -46,20 +46,13 @@ public class Calculator
         return result;
     }
 
-    public void negate() {
+    public void negate() throws ArithmeticException {
         double result = getResult();
-        if (result > 0){
+        if (result > 0) {
             result = 0 - result;
             setResult(result);
+        } else {
+            throw new ArithmeticException("cannot negate a number");
         }
-        else {
-            System.out.println("number is already negative, set result to zero");
-            setResult(0);
-            setErrorMessage("error");
-        }
-    }
-
-    public String getErrorMessage() {
-        return message;
     }
 }
